@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Card Game</title>
+  </head>
+  <body>
+    <div class="board">
+      <header>
+        <h1>Simple Blackjack</h1>
+      </header>
+      <section class="name-display-section">
+        <div class="player-labels-boxes">
+        <p class="player-label">Player 1</p>
+        <p id="player-one-name-display" class="player-one-name-display"></p>
+      </div>
+        <h4>VS</h4>
+        <div class="player-labels-boxes">
+        <p class="player-label">Player 2</p>
+        <p id="player-two-name-display" class="player-two-name-display"></p>
+      </div>
+      </section>
+      <main class="board-game">
+        <!-- PLAYER'S SECTION -->
+        <section class="players-section">
+        <section class="player-one-section">
+          <p class="player-one-cards-display" id="player-one-cards-display"></p>
+          <p class="player-one-sum-el sum-el" id="player-one-sum-display-el"></p>
+  
+          <button class="player-one-new-card btn" id="player-one-new-card-btn">New Card</button>
+        </section>
+        <!-- Player 2'S SECTION -->
+        <section class="player-two-section">
+    
+          <p class="player-two-cards-display" id="player-two-cards-display"></p>
+          <p class="player-two-sum-el sum-el" id="player-two-sum-display-el"></p>
+          <button class="player-two-new-card btn" id="player-two-new-card-btn">New Card</button>
+        </section>
+      </section>
+      <section class="game-play-btns">
+        <button class="start-game-btn btn" id="start-game-btn">
+          Start Game
+        </button>
+        <button class="reset-btn btn" id="reset-btn">RESET GAME</button>
+      </section>
+      <p class="note" id="note">Click Start Game to begin playing......</p>
+    </div>
+  </main>
+    <script src="script.js"></script>
+  </body>
+</html>
